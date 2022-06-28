@@ -1,0 +1,52 @@
+body {
+    margin   : 0;
+    padding  : 0;
+    color    : white;
+    font-size: 26px;
+}
+
+.container {
+    max-width : 1140px;
+    min-height: 100vh;
+    margin    : 0 auto;
+
+    display: grid;
+    gap    : 20px;
+    grid-template:
+        'header header header header header'auto '. aside main main .'1fr 'footer footer footer footer footer'auto / 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 1140px;
+    margin   : 0 auto;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.aside {
+    grid-area: aside;
+    height   : 100%;
+}
+
+.main {
+    grid-area: main;
+    height   : 100%;
+}
+
+.wrapper {
+    min-height      : 50px;
+    height          : 100%;
+    padding         : 20px;
+    background-color: blue;
+    border          : 2px solid red;
+}
